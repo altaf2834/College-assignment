@@ -2,7 +2,6 @@
 const NEWS_API_KEY = "d74e19b56e03421faf33bd28fe4d91f8";
 
 // ----------- GEMINI API KEY -------------
-const GEMINI_API_KEY = "AIzaSyBev6ZaYPL4B-c-IseY5EVrLQ-49FiYOuU";
 
 const newsContainer = document.getElementById("newsContainer");
 const featured = document.getElementById("featuredNews");
@@ -169,5 +168,6 @@ aiOutput.innerHTML = "Thinking...";
 const result = await callGemini(question);
 
 aiOutput.innerHTML = result;
+
 
 }
