@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>GlobalPulse - World Events</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>🌍 GlobalPulse</h1>
+
+<input type="text" id="searchInput" placeholder="Search global events...">
+
+</header>
+
+
+<nav>
+
+<button onclick="getNews('general')">General</button>
+<button onclick="getNews('sports')">Sports</button>
+<button onclick="getNews('technology')">Technology</button>
+<button onclick="getNews('science')">Science</button>
+<button onclick="getNews('business')">Economy</button>
+
+</nav>
+<textarea id="newsInput" placeholder="Paste news or topic here"></textarea>
+
+<br><br>
+
+<button onclick="summarizeNews()">Summarize News</button>
+<button onclick="explainNews()">Explain Simply</button>
+<button onclick="generateDebate()">Debate Points</button>
+<button onclick="generateOpinion()">Generate Opinion</button>
+<button onclick="generateQuiz()">Create Quiz</button>
+<button onclick="chatAI()">Ask AI</button>
+
+<br><br>
+
+<div id="output"></div>
+
+
+<section class="breaking">
+
+<marquee id="breakingNews"></marquee>
+
+</section>
+
+
+<section class="featured">
+
+<div id="featuredNews"></div>
+
+</section>
+
+
+<section class="news-grid">
+
+<div id="newsContainer"></div>
+
+</section>
+
+
+<footer>
+
+<p>GlobalPulse © 2026</p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
